@@ -166,6 +166,26 @@
             </div>
         </div>
     </section>
+	
+	    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <h2 class="title is-3">Experiment Results</h2>
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 100%;" src="static/images/exp_1.png" alt="wizardmath" />
+                            <!-- <h2 class="subtitle"> -->
+                                <!-- Figure 1: A diagram illustrating the three steps of our Reinforcement Learning from Evol-Instruct Feedback (RLEIF): (1) supervised fine-tuning (SFT), (2) -->
+<!-- Instruction Reward Model (IRM) training and Process-supervised Reward Model (PRM) training, and (3) Active Evol-Instruct and reinforcement learning via proximal policy optimization (PPO). -->
+                            <!-- </h2> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <section class="hero"> -->
         <!-- <div class="hero-body"> -->
@@ -266,301 +286,301 @@
         <!-- </div> -->
     <!-- </section> -->
 
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered">
-                    <div class="column has-text-centered is-fifths-fifths">
-                        <h2 class="title is-3">Experiment Results</h2>
-                        <div class="content has-text-justified">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Model</th>
-                                        <th>#params</th>
-                                        <th>GSM8K</th>
-                                        <th>MATH</th>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                </thead>
-                                <tbody id="tabResults">
-                                    <tr class="th">
-                                        <td colspan="4" style="text-align: center; font-weight: bold;">
-                                            Closed-source Model</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GPT-4</td>
-                                        <td>-</td>
-                                        <td>92.0</td>
-                                        <td>42.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GPT-3.5-Turbo</td>
-                                        <td>-</td>
-                                        <td>80.8</td>
-                                        <td>34.1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>PaLM</td>
-                                        <td>8B</td>
-                                        <td>4.1</td>
-                                        <td>1.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>PaLM</td>
-                                        <td>62B</td>
-                                        <td>33.0</td>
-                                        <td>4.4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>PaLM</td>
-                                        <td>540B</td>
-                                        <td>56.5</td>
-                                        <td>8.8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>PaLM-2</td>
-                                        <td>540B</td>
-                                        <td>80.7</td>
-                                        <td>34.3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Flan-PaLM 2</td>
-                                        <td>540B</td>
-                                        <td>84.7</td>
-                                        <td>33.2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Minerva</td>
-                                        <td>8B</td>
-                                        <td>16.2</td>
-                                        <td>14.1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Minerva</td>
-                                        <td>62B</td>
-                                        <td>52.4</td>
-                                        <td>27.6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Minerva</td>
-                                        <td>540B</td>
-                                        <td>58.8</td>
-                                        <td>33.6</td>
-                                    </tr>
+    <!-- <section class="hero"> -->
+        <!-- <div class="hero-body"> -->
+            <!-- <div class="container is-max-desktop"> -->
+                <!-- <div class="columns is-centered"> -->
+                    <!-- <div class="column has-text-centered is-fifths-fifths"> -->
+                        <!-- <h2 class="title is-3">Experiment Results</h2> -->
+                        <!-- <div class="content has-text-justified"> -->
+                            <!-- <table> -->
+                                <!-- <thead> -->
+                                    <!-- <tr> -->
+                                        <!-- <th>Model</th> -->
+                                        <!-- <th>#params</th> -->
+                                        <!-- <th>GSM8K</th> -->
+                                        <!-- <th>MATH</th> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                    <!-- </tr> -->
+                                <!-- </thead> -->
+                                <!-- <tbody id="tabResults"> -->
+                                    <!-- <tr class="th"> -->
+                                        <!-- <td colspan="4" style="text-align: center; font-weight: bold;"> -->
+                                            <!-- Closed-source Model</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>GPT-4</td> -->
+                                        <!-- <td>-</td> -->
+                                        <!-- <td>92.0</td> -->
+                                        <!-- <td>42.5</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>GPT-3.5-Turbo</td> -->
+                                        <!-- <td>-</td> -->
+                                        <!-- <td>80.8</td> -->
+                                        <!-- <td>34.1</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>PaLM</td> -->
+                                        <!-- <td>8B</td> -->
+                                        <!-- <td>4.1</td> -->
+                                        <!-- <td>1.5</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>PaLM</td> -->
+                                        <!-- <td>62B</td> -->
+                                        <!-- <td>33.0</td> -->
+                                        <!-- <td>4.4</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>PaLM</td> -->
+                                        <!-- <td>540B</td> -->
+                                        <!-- <td>56.5</td> -->
+                                        <!-- <td>8.8</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>PaLM-2</td> -->
+                                        <!-- <td>540B</td> -->
+                                        <!-- <td>80.7</td> -->
+                                        <!-- <td>34.3</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Flan-PaLM 2</td> -->
+                                        <!-- <td>540B</td> -->
+                                        <!-- <td>84.7</td> -->
+                                        <!-- <td>33.2</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Minerva</td> -->
+                                        <!-- <td>8B</td> -->
+                                        <!-- <td>16.2</td> -->
+                                        <!-- <td>14.1</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Minerva</td> -->
+                                        <!-- <td>62B</td> -->
+                                        <!-- <td>52.4</td> -->
+                                        <!-- <td>27.6</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Minerva</td> -->
+                                        <!-- <td>540B</td> -->
+                                        <!-- <td>58.8</td> -->
+                                        <!-- <td>33.6</td> -->
+                                    <!-- </tr> -->
 
-                                    <tr class="th">
-                                        <td colspan="4" style="text-align: center; font-weight: bold;">
-                                            Open-source models (1-10B)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-1</td>
-                                        <td>7B</td>
-                                        <td>11.0</td>
-                                        <td>2.9</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-2</td>
-                                        <td>7B</td>
-                                        <td>14.6</td>
-                                        <td>2.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MPT</td>
-                                        <td>7B</td>
-                                        <td>6.8</td>
-                                        <td>3.0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Falcon</td>
-                                        <td>7B</td>
-                                        <td>6.8</td>
-                                        <td>2.3</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InternLM</td>
-                                        <td>7B</td>
-                                        <td>31.2</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GPT-J</td>
-                                        <td>6B</td>
-                                        <td>34.9</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ChatGLM 2</td>
-                                        <td>6B</td>
-                                        <td>32.4</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Qwen</td>
-                                        <td>7B</td>
-                                        <td>51.6</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Baichuan-2</td>
-                                        <td>7B</td>
-                                        <td>24.5</td>
-                                        <td>5.6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SFT</td>
-                                        <td>7B</td>
-                                        <td>41.6</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>RFT</td>
-                                        <td>7B</td>
-                                        <td>50.3</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>WizardMath</td>
-                                        <td>7B</td>
-                                        <td>54.9</td>
-                                        <td>10.7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MetaMath (<b>ours</b>)</td>
-                                        <td>7B</td>
-                                        <td><b>66.5</b></td>
-                                        <td><b>19.8</b></td>
-                                    </tr>
-                                    <tr class="th">
-                                        <td colspan="4" style="text-align: center; font-weight: bold;">
-                                            Open-source models (11-50B)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-1</td>
-                                        <td>13B</td>
-                                        <td>17.8</td>
-                                        <td>3.9</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-1</td>
-                                        <td>33B</td>
-                                        <td>35.6</td>
-                                        <td>7.1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-2</td>
-                                        <td>13B</td>
-                                        <td>28.7</td>
-                                        <td>3.9</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-2</td>
-                                        <td>34B</td>
-                                        <td>42.2</td>
-                                        <td>6.2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MPT</td>
-                                        <td>30B</td>
-                                        <td>15.2</td>
-                                        <td>3.1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Falcon</td>
-                                        <td>40B</td>
-                                        <td>19.6</td>
-                                        <td>2.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GAL</td>
-                                        <td>30B</td>
-                                        <td>-</td>
-                                        <td>12.7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vicuna</td>
-                                        <td>13B</td>
-                                        <td>27.6</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Baichuan-2</td>
-                                        <td>13B</td>
-                                        <td>52.8</td>
-                                        <td>10.1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>SFT</td>
-                                        <td>13B</td>
-                                        <td>50.0</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>RFT</td>
-                                        <td>13B</td>
-                                        <td>54.8</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>WizardMath</td>
-                                        <td>13B</td>
-                                        <td>63.9</td>
-                                        <td>14.0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MetaMath (<b>ours</b>)</td>
-                                        <td>13B</td>
-                                        <td><b>72.3</b></td>
-                                        <td><b>22.4</b></td>
-                                    </tr>
+                                    <!-- <tr class="th"> -->
+                                        <!-- <td colspan="4" style="text-align: center; font-weight: bold;"> -->
+                                            <!-- Open-source models (1-10B)</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-1</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>11.0</td> -->
+                                        <!-- <td>2.9</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-2</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>14.6</td> -->
+                                        <!-- <td>2.5</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>MPT</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>6.8</td> -->
+                                        <!-- <td>3.0</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Falcon</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>6.8</td> -->
+                                        <!-- <td>2.3</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>InternLM</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>31.2</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>GPT-J</td> -->
+                                        <!-- <td>6B</td> -->
+                                        <!-- <td>34.9</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>ChatGLM 2</td> -->
+                                        <!-- <td>6B</td> -->
+                                        <!-- <td>32.4</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Qwen</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>51.6</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Baichuan-2</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>24.5</td> -->
+                                        <!-- <td>5.6</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>SFT</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>41.6</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>RFT</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>50.3</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>WizardMath</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td>54.9</td> -->
+                                        <!-- <td>10.7</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>MetaMath (<b>ours</b>)</td> -->
+                                        <!-- <td>7B</td> -->
+                                        <!-- <td><b>66.5</b></td> -->
+                                        <!-- <td><b>19.8</b></td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr class="th"> -->
+                                        <!-- <td colspan="4" style="text-align: center; font-weight: bold;"> -->
+                                            <!-- Open-source models (11-50B)</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-1</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>17.8</td> -->
+                                        <!-- <td>3.9</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-1</td> -->
+                                        <!-- <td>33B</td> -->
+                                        <!-- <td>35.6</td> -->
+                                        <!-- <td>7.1</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-2</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>28.7</td> -->
+                                        <!-- <td>3.9</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-2</td> -->
+                                        <!-- <td>34B</td> -->
+                                        <!-- <td>42.2</td> -->
+                                        <!-- <td>6.2</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>MPT</td> -->
+                                        <!-- <td>30B</td> -->
+                                        <!-- <td>15.2</td> -->
+                                        <!-- <td>3.1</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Falcon</td> -->
+                                        <!-- <td>40B</td> -->
+                                        <!-- <td>19.6</td> -->
+                                        <!-- <td>2.5</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>GAL</td> -->
+                                        <!-- <td>30B</td> -->
+                                        <!-- <td>-</td> -->
+                                        <!-- <td>12.7</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Vicuna</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>27.6</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>Baichuan-2</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>52.8</td> -->
+                                        <!-- <td>10.1</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>SFT</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>50.0</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>RFT</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>54.8</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>WizardMath</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td>63.9</td> -->
+                                        <!-- <td>14.0</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>MetaMath (<b>ours</b>)</td> -->
+                                        <!-- <td>13B</td> -->
+                                        <!-- <td><b>72.3</b></td> -->
+                                        <!-- <td><b>22.4</b></td> -->
+                                    <!-- </tr> -->
 
-                                    <tr class="th">
-                                        <td colspan="4" style="text-align: center; font-weight: bold;">
-                                            Open-source models (50-70B)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-1</td>
-                                        <td>65B</td>
-                                        <td>50.9</td>
-                                        <td>10.6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>LLaMA-2</td>
-                                        <td>70B</td>
-                                        <td>56.8</td>
-                                        <td>13.5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>RFT</td>
-                                        <td>70B</td>
-                                        <td>64.8</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>WizardMath</td>
-                                        <td>70B</td>
-                                        <td>81.6</td>
-                                        <td>22.7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>MetaMath (<b>ours</b>) <sup>‡</sup></td>
-                                        <td>70B</td>
-                                        <td><b>82.3</b></td>
-                                        <td><b>26.6</b></td>
-                                    </tr>
-                        </div>
-                        </tbody>
-                        </table>
-                    </div>
-                    <h2 class="subtitle">Table 1: Comparison of testing accuracy to existing LLMs on GSM8K and MATH.
-                        <sup>‡</sup>Due to the computing resource limitation, we finetune MetaMath-70B using QLoRA.
-                    </h2>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+                                    <!-- <tr class="th"> -->
+                                        <!-- <td colspan="4" style="text-align: center; font-weight: bold;"> -->
+                                            <!-- Open-source models (50-70B)</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-1</td> -->
+                                        <!-- <td>65B</td> -->
+                                        <!-- <td>50.9</td> -->
+                                        <!-- <td>10.6</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>LLaMA-2</td> -->
+                                        <!-- <td>70B</td> -->
+                                        <!-- <td>56.8</td> -->
+                                        <!-- <td>13.5</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>RFT</td> -->
+                                        <!-- <td>70B</td> -->
+                                        <!-- <td>64.8</td> -->
+                                        <!-- <td>-</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>WizardMath</td> -->
+                                        <!-- <td>70B</td> -->
+                                        <!-- <td>81.6</td> -->
+                                        <!-- <td>22.7</td> -->
+                                    <!-- </tr> -->
+                                    <!-- <tr> -->
+                                        <!-- <td>MetaMath (<b>ours</b>) <sup>‡</sup></td> -->
+                                        <!-- <td>70B</td> -->
+                                        <!-- <td><b>82.3</b></td> -->
+                                        <!-- <td><b>26.6</b></td> -->
+                                    <!-- </tr> -->
+                        <!-- </div> -->
+                        <!-- </tbody> -->
+                        <!-- </table> -->
+                    <!-- </div> -->
+                    <!-- <h2 class="subtitle">Table 1: Comparison of testing accuracy to existing LLMs on GSM8K and MATH. -->
+                        <!-- <sup>‡</sup>Due to the computing resource limitation, we finetune MetaMath-70B using QLoRA. -->
+                    <!-- </h2> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
 
 
     <!--BibTex citation -->
