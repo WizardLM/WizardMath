@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>MetaMath</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">MetaMath:<br />Bootstrap Your Own
+                            Mathematical Questions for Large Language Models</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block"><a href="https://yulonghui.github.io/" target="_blank">Longhui
+                                    Yu</a><sup>1,*</sup>,</span>
+                            <span class="author-block"><a href="https://wayson.tech/" target="_blank">Weisen
+                                    Jiang</a><sup>2,3,*</sup>,</span>
+                            <span class="author-block"><a href="https://han-shi.github.io/" target="_blank">Han
+                                    Shi</a><sup>4,‡</sup>,</span>
+                            <span class="author-block"><a href="https://lovesykun.cn/about.html"
+                                    target="_blank">Jincheng
+                                    Yu</a><sup>3,4</sup>,</span>
+                            <span class="author-block"><a href="https://scholar.google.com/citations?user=DFme0joAAAAJ"
+                                    target="_blank">Zhengying
+                                    Liu</a><sup>4</sup>,</span>
+                            <br />
+                            <span class="author-block"><a href="https://cse.sustech.edu.cn/faculty/~zhangy/"
+                                    target="_blank">Yu
+                                    Zhang</a><sup>2</sup>,</span>
+                            <span class="author-block"><a href="https://www.cse.ust.hk/~jamesk/" target="_blank">James
+                                    T.
+                                    Kwok</a><sup>3</sup>,</span>
+                            <span class="author-block"><a href="https://scholar.google.com/citations?user=XboZC1AAAAAJ"
+                                    target="_blank">Zhenguo
+                                    Li</a><sup>4</sup>,</span>
+                            <span class="author-block"><a href="https://mlg.eng.cam.ac.uk/adrian/"
+                                    target="_blank">Adrian
+                                    Weller</a><sup>1,5</sup>,</span>
+                            <span class="author-block"><a href="https://wyliu.com/" target="_blank">Weiyang
+                                    Liu</a><sup>1,6,‡</sup></span>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>University of Cambridge,</span>
+                            <span class="author-block"><sup>2</sup>Southern University of Science and Technology,</span>
+                            <span class="author-block"><sup>3</sup>Hong Kong University of Science and
+                                Technology,</span>
+                            <span class="author-block"><sup>4</sup>Huawei Noah's Ark Lab,</span>
+                            <span class="author-block"><sup>5</sup>The Alan Turing Institute,</span>
+                            <span class="author-block"><sup>6</sup>Max Planck Institute for Intelligent Systems</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, <sup>‡</sup>Corresponding
+                                    author</small></span>
+                            <span class="eql-cntrb"><small><br><a
+                                        href="mailto:longhuiyu98@gmail.com">longhuiyu98@gmail.com</a>, <a
+                                        href="mailto:shi.han@huawei.com">shi.han@huawei.com</a>, <a
+                                        href="mailto:wl396@cam.ac.uk">wl396@cam.ac.uk</a></small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            &#x1F917;
+                                        </span>
+                                        <span>Models</span>
+                                    </a>
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://huggingface.co/datasets/meta-math/MetaMathQA" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            &#x1F917;
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/meta-math/MetaMath" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2309.12284" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Large language models (LLMs) have pushed the limits of natural language understanding and
+                            exhibited excellent problem-solving ability. Despite the great success, most existing
+                            open-source LLMs (e.g., LLaMA-2) are still far away from satisfactory for solving mathematical problems due to its complex reasoning procedures. To bridge
+                            this gap, we propose MetaMath, a finetuned language model that specializes in
+                            mathematical reasoning. Specifically, we start by bootstrapping mathematical questions by
+                            rewriting the question from multiple perspectives, which results in
+                            a new dataset called MetaMathQA. Then we finetune the LLaMA-2 models on MetaMathQA.
+                            Experimental results on two popular benchmarks (i.e., GSM8K and MATH) for
+                            mathematical reasoning emonstrate that MetaMath outperforms all open-source LLMs by a
+                            significant margin. Our MetaMath-7B model achieves 66.5% on GSM8K and 19.8% on MATH,
+                            exceeding the state-of-the-art models of the same size by 11.5% and 8.7%. Particularly,
+                            MetaMath-70B achieves an accuracy of 82.3% on GSM8K, slightly better than
+                            GPT-3.5-Turbo. We release the MetaMathQA dataset, the pretrained
+                            MetaMath models with different mode size and the training code for public use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <h2 class="title is-3">Overview</h2>
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="item">
+                            <!-- Your image here -->
+                            <img style="width: 100%;" src="static/images/metamath.svg" alt="metamath" />
+                            <h2 class="subtitle">
+                                Figure 1: Overview of the <i>MetaMathQA</i> data and <i>MetaMath</i>.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">MetaMathQA</h2>
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="item">
+                            <article class="message is-dark">
+                                <div class="message-header">
+                                    <p>Answer Augmentation (AnsAug)</p>
+                                </div>
+                                <div class="message-body">
+                                    <p>
+                                        <b>Generated Answer:</b>
+                                        James buys 5 packs of beef that are 4 pounds each,
+                                        so he buys a total of 5 * 4 = 20 pounds of beef. The price of beef is $5.50
+                                        per pound, so he pays 20 * $5.50 = $110. The answer is: 110
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="message is-dark">
+                                <div class="message-header">
+                                    <p>Rephrasing Question</p>
+                                </div>
+                                <div class="message-body">
+                                    <p>
+                                        <b>Question:</b> What is the total amount that James paid when he purchased 5 packs of beef, each weighing 4
+                                        pounds, at a price of $5.50 per pound?
+                                    </p>
+                                    <p>
+                                        <b>Rephrase the above question:</b> Each pack of beef weighs 4 pounds, so 5 packs weigh 4 * 5 = 20 pounds in total. The price per
+                                        pound of beef is $5.50, so the total cost for 20 pounds is 20 * $5.50 = $110. Therefore, James paid a total of
+                                        $110. The answer is: 110.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="message is-dark">
+                                <div class="message-header">
+                                    <p>Self-Verification Question</p>
+                                </div>
+                                <div class="message-body">
+                                    <p><b>Question:</b> James buys <span style="color: red">x</span> packs of beef that
+                                        are
+                                        4 pounds each. The price of beef is \$5.50 per pound. He paid 110. <span
+                                            style="color: red">What is the value of unknown variable x?</span></p>
+                                    <p>
+                                        <b>Answer:</b> To solve this problem, we need to determine the value of x, which
+                                        represents the number of packs of beef that James bought.
+                                        Each pack of beef weighs 4 pounds and costs $5.50 per pound.
+                                        The total amount James paid is $110.
+                                        We can set up the equation as follows:
+                                        Number of packs of beef * Weight per pack * Price per pound = Total amount paid;
+                                        x * 4 * $5.50 = $110;
+                                        Let's simplify and solve for x:
+                                        4x * $5.50 = $110;
+                                        22x = $110;
+                                        To isolate x, we divide both sides of the equation by 22:
+                                        22x / 22 = $110 / 22;
+                                        x = $5;
+                                        The value of x is 5.
+
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="message is-dark">
+                                <div class="message-header">
+                                    <p>FOBAR Question</p>
+                                </div>
+                                <div class="message-body">
+                                    <p>
+                                        <b>Question:</b>
+                                        James buys <span style="color: red">x</span> packs of beef that are 4 pounds
+                                        each.
+                                        The price of beef is $5.50 per pound. How much did he pay?
+                                        <span style="color: red">If we know the answer to the above question is 110,
+                                            what is
+                                            the value of unknown variable x?</span>
+                                    </p>
+                                    <p>
+                                        <b>Answer:</b>
+                                        James buys x packs of beef that are 4 pounds each, so he buys a total of 4x
+                                        pounds
+                                        of beef.
+                                        The price of beef is $5.50 per pound, so the total cost of the beef is 5.50 * 4x
+                                        =
+                                        22x.
+                                        We are given that the total cost is $110, so we can write: 22x = 110.
+                                        Dividing both sides by 22, we get: x = 5.
+                                        The value of x is 5.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered is-fifths-fifths">
+                        <h2 class="title is-3">Comprehensive Results</h2>
+                        <div class="content has-text-justified">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>#params</th>
+                                        <th>GSM8K</th>
+                                        <th>MATH</th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabResults">
+                                    <tr class="th">
+                                        <td colspan="4" style="text-align: center; font-weight: bold;">
+                                            Closed-source Model</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPT-4</td>
+                                        <td>-</td>
+                                        <td>92.0</td>
+                                        <td>42.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPT-3.5-Turbo</td>
+                                        <td>-</td>
+                                        <td>80.8</td>
+                                        <td>34.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PaLM</td>
+                                        <td>8B</td>
+                                        <td>4.1</td>
+                                        <td>1.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PaLM</td>
+                                        <td>62B</td>
+                                        <td>33.0</td>
+                                        <td>4.4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PaLM</td>
+                                        <td>540B</td>
+                                        <td>56.5</td>
+                                        <td>8.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PaLM-2</td>
+                                        <td>540B</td>
+                                        <td>80.7</td>
+                                        <td>34.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Flan-PaLM 2</td>
+                                        <td>540B</td>
+                                        <td>84.7</td>
+                                        <td>33.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minerva</td>
+                                        <td>8B</td>
+                                        <td>16.2</td>
+                                        <td>14.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minerva</td>
+                                        <td>62B</td>
+                                        <td>52.4</td>
+                                        <td>27.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Minerva</td>
+                                        <td>540B</td>
+                                        <td>58.8</td>
+                                        <td>33.6</td>
+                                    </tr>
+
+                                    <tr class="th">
+                                        <td colspan="4" style="text-align: center; font-weight: bold;">
+                                            Open-source models (1-10B)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-1</td>
+                                        <td>7B</td>
+                                        <td>11.0</td>
+                                        <td>2.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-2</td>
+                                        <td>7B</td>
+                                        <td>14.6</td>
+                                        <td>2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MPT</td>
+                                        <td>7B</td>
+                                        <td>6.8</td>
+                                        <td>3.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falcon</td>
+                                        <td>7B</td>
+                                        <td>6.8</td>
+                                        <td>2.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>InternLM</td>
+                                        <td>7B</td>
+                                        <td>31.2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GPT-J</td>
+                                        <td>6B</td>
+                                        <td>34.9</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ChatGLM 2</td>
+                                        <td>6B</td>
+                                        <td>32.4</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qwen</td>
+                                        <td>7B</td>
+                                        <td>51.6</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baichuan-2</td>
+                                        <td>7B</td>
+                                        <td>24.5</td>
+                                        <td>5.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SFT</td>
+                                        <td>7B</td>
+                                        <td>41.6</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RFT</td>
+                                        <td>7B</td>
+                                        <td>50.3</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WizardMath</td>
+                                        <td>7B</td>
+                                        <td>54.9</td>
+                                        <td>10.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MetaMath (<b>ours</b>)</td>
+                                        <td>7B</td>
+                                        <td><b>66.5</b></td>
+                                        <td><b>19.8</b></td>
+                                    </tr>
+                                    <tr class="th">
+                                        <td colspan="4" style="text-align: center; font-weight: bold;">
+                                            Open-source models (11-50B)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-1</td>
+                                        <td>13B</td>
+                                        <td>17.8</td>
+                                        <td>3.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-1</td>
+                                        <td>33B</td>
+                                        <td>35.6</td>
+                                        <td>7.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-2</td>
+                                        <td>13B</td>
+                                        <td>28.7</td>
+                                        <td>3.9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-2</td>
+                                        <td>34B</td>
+                                        <td>42.2</td>
+                                        <td>6.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MPT</td>
+                                        <td>30B</td>
+                                        <td>15.2</td>
+                                        <td>3.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Falcon</td>
+                                        <td>40B</td>
+                                        <td>19.6</td>
+                                        <td>2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GAL</td>
+                                        <td>30B</td>
+                                        <td>-</td>
+                                        <td>12.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vicuna</td>
+                                        <td>13B</td>
+                                        <td>27.6</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Baichuan-2</td>
+                                        <td>13B</td>
+                                        <td>52.8</td>
+                                        <td>10.1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SFT</td>
+                                        <td>13B</td>
+                                        <td>50.0</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RFT</td>
+                                        <td>13B</td>
+                                        <td>54.8</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WizardMath</td>
+                                        <td>13B</td>
+                                        <td>63.9</td>
+                                        <td>14.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MetaMath (<b>ours</b>)</td>
+                                        <td>13B</td>
+                                        <td><b>72.3</b></td>
+                                        <td><b>22.4</b></td>
+                                    </tr>
+
+                                    <tr class="th">
+                                        <td colspan="4" style="text-align: center; font-weight: bold;">
+                                            Open-source models (50-70B)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-1</td>
+                                        <td>65B</td>
+                                        <td>50.9</td>
+                                        <td>10.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LLaMA-2</td>
+                                        <td>70B</td>
+                                        <td>56.8</td>
+                                        <td>13.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RFT</td>
+                                        <td>70B</td>
+                                        <td>64.8</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>WizardMath</td>
+                                        <td>70B</td>
+                                        <td>81.6</td>
+                                        <td>22.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MetaMath (<b>ours</b>) <sup>‡</sup></td>
+                                        <td>70B</td>
+                                        <td><b>82.3</b></td>
+                                        <td><b>26.6</b></td>
+                                    </tr>
+                        </div>
+                        </tbody>
+                        </table>
+                    </div>
+                    <h2 class="subtitle">Table 1: Comparison of testing accuracy to existing LLMs on GSM8K and MATH.
+                        <sup>‡</sup>Due to the computing resource limitation, we finetune MetaMath-70B using QLoRA.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{yu2023metamath,
+  title={MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models},
+  author={Yu, Longhui and Jiang, Weisen and Shi, Han and Yu, Jincheng and Liu, Zhengying and Zhang, Yu and Kwok, James T and Li, Zhenguo and Weller, Adrian and Liu, Weiyang},
+  journal={arXiv preprint arXiv:2309.12284},
+  year={2023}
+}</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
